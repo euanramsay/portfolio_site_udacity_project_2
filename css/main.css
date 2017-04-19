@@ -3,44 +3,88 @@ header {
 	text-align: right;
 	box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1560px;
     padding-left: 20px;
     padding-right: 20px
 }
 
 body {
 	font-family: 'Playfair Display', serif;
+	max-width: 1560px;
+	margin: auto;
 }
 
 img {
 	width: 100%;
 }
 
-ul {
-	display: block;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+a {
+	text-decoration: none;
+	color: black;
 }
 
-li {
-	justify-content: space-around;
+.work-header {
 	box-sizing: border-box;
-	display: inline-block;
-	width: 33%;
-	padding: 24px;
-}
-
-section {
-    box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 1560px;
-    padding-left: 20px;
+	padding-left: 20px;
     padding-right: 20px
 }
 
-.work {
-	width: 100%;
-	padding: 0;
-	margin: 0;
+.work-item {
+	overflow: auto;
+	padding: 10px;
 }
+
+.article-text {
+	overflow: auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.article-picture {
+	overflow: auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.article-heading {
+	font-size: 1.2em;
+}
+
+.work-item:hover { 
+    opacity: 0.7;
+}
+
+.work-item:active {
+	opacity: 0.3;
+}
+
+.work-item .article-picture,
+.work-item .article-text {
+	float: left;
+	width: 50%;
+}
+
+/*@media screen and (min-width: 450px) {
+	.work-item {
+		width: 100%;
+	}
+
+	picture {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 450px) {
+	.work-item {
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 450px) {
+	.work-item {
+		width: 33%;
+	}
+}*/
+
+
+
+
