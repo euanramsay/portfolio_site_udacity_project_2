@@ -1,3 +1,4 @@
+/*Import social media icons*/
 @import url(http://weloveiconfonts.com/api/?family=zocial);
 
 /* zocial */
@@ -13,6 +14,7 @@ header {
     line-height: 1.5em;
 }
 
+/*Set maximum with of body with margins, use Google Font*/
 body {
 	font-family: 'Playfair Display', serif;
 	max-width: 1560px;
@@ -42,6 +44,12 @@ a {
 	color: black;
 }
 
+/*social class and with social prefix are the drop down menu in header*/
+.social {
+	float: left;
+    position: relative;
+}
+
 .social-button {
 	font-family: 'Playfair Display', serif;
 	font-size: 0.9em;
@@ -51,11 +59,6 @@ a {
 	border: none;
     cursor: pointer;
     position: absolute;
-}
-
-.social {
-	float: left;
-    position: relative;
 }
 
 .social-content {
@@ -95,10 +98,12 @@ a {
 	overflow: hidden;
 }
 
+/*set transition for main image due to changes in media query*/
 .main-image img {
 	transition:margin-top 0.5s ease-in-out;
 	}
 
+/*set 'Featured Work' header, set animation*/
 .work-header {
 	color: white;
 	padding-left: 20px;
@@ -146,6 +151,7 @@ a {
 	box-sizing: border-box;
 }
 
+/*set up animation for 'Featured Work'*/
 @keyframes fadeInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -162,6 +168,7 @@ a {
   }
 }
 
+/*media queries to change images and layout as screen size increases*/
 @media screen and (min-width: 600px) {
 	header {
 		font-size: 1.2em;
