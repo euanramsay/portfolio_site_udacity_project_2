@@ -26,6 +26,15 @@ a {
 	color: black;
 }
 
+.main-image {
+	max-height: 600px;
+	overflow: hidden;
+}
+
+.main-image img {
+	transition:margin-top 0.5s ease-in-out;
+	}
+
 .work-header {
 	box-sizing: border-box;
 	padding-left: 20px;
@@ -35,6 +44,7 @@ a {
 .work-item {
 	overflow: auto;
 	padding: 10px;
+	transition:width 0.5s ease-in-out;
 }
 
 .article-text {
@@ -90,9 +100,20 @@ a {
 
 }
 
+@media screen and (min-width: 900px) {
+	.main-image img {
+		margin-top: -30px;
+	}
+
+}
+
 @media screen and (min-width: 1000px) {
 	.article-hr {
 		display: none;
+	}
+
+	.main-image img {
+		margin-top: -60px;
 	}
 
 	.work-articles-container {
@@ -111,6 +132,22 @@ a {
 	}
 
 }
+
+@media screen and (min-width: 1200px) {
+	.main-image img {
+		margin-top: -90px;
+	}
+
+}
+
+@media screen and (min-width: 1560px) {
+	.main-image img {
+		margin-top: -120px;
+	}
+
+}
+
+
 
 
 
