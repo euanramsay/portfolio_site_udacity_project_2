@@ -6,15 +6,6 @@ header {
     line-height: 1.5em;
 }
 
-h3 {
-	margin: 5;
-}
-
-hr {
-	color: #334E58;
-	opacity: 0.8;
-}
-
 body {
 	font-family: 'Playfair Display', serif;
 	max-width: 1560px;
@@ -25,6 +16,16 @@ footer {
 	text-align: center;
 }
 
+h3 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+hr {
+	color: #334E58;
+	opacity: 0.8;
+}
+
 img {
 	width: 100%;
 }
@@ -32,6 +33,50 @@ img {
 a {
 	text-decoration: none;
 	color: black;
+}
+
+.social-button {
+	font-family: 'Playfair Display', serif;
+	font-size: 0.9em;
+	color: #334E58;
+    opacity: 0.8;
+	background-color: white;
+	border: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+.social {
+	float: left;
+    position: relative;
+}
+
+.social-content {
+	background-color: white;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.social-content a {
+	font-size: 0.5em;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.social-content a:hover {
+	background-color: #DCE6E9;
+}
+
+.social-content a:active {
+	background-color: #334E58;
+}
+
+.social:hover .social-content {
+	background-color: white;
+    display: block;
 }
 
 .sub-header {
@@ -52,7 +97,7 @@ a {
 	color: white;
 	padding-left: 20px;
     padding-right: 20px;
-    animation: slideInFromLeft 0.5s ease-out;
+    animation: fadeInFromLeft 0.5s ease-out;
     background-color: #334E58;
     opacity: 0.8;
     overflow: hidden;
@@ -63,22 +108,6 @@ a {
 	overflow: auto;
 	padding: 10px;
 	transition:width 0.5s ease-in-out;
-}
-
-.article-text {
-	overflow: auto;
-	padding: 10px;
-	box-sizing: border-box;
-}
-
-.article-picture {
-	overflow: auto;
-	padding: 10px;
-	box-sizing: border-box;
-}
-
-.article-heading {
-	font-size: 1.2em;
 }
 
 .work-item:hover { 
@@ -95,12 +124,35 @@ a {
 	width: 50%;
 }
 
-@keyframes slideInFromLeft {
+.article-heading {
+	font-size: 1.2em;
+}
+
+.article-text {
+	overflow: auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.article-picture {
+	overflow: auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+@keyframes fadeInFromLeft {
   0% {
     transform: translateX(-100%);
+    opacity: 0;
   }
+
+  50% {
+  	opacity: 0.2;
+  }
+
   100% {
     transform: translateX(0);
+    opacity: 0.8;
   }
 }
 
@@ -108,6 +160,10 @@ a {
 	header {
 		font-size: 1.2em;
 		line-height: 1.2em;
+	}
+
+	h3 {
+		margin-top: 10px;
 	}
 
 	.article-hr {
@@ -141,6 +197,11 @@ a {
 		font-size: 1.2em;
 		line-height: 1.2em;
 	}
+
+	h3 {
+		margin-top: 15px;
+	}
+
 	.main-image img {
 		margin-top: -30px;
 	}
@@ -178,23 +239,31 @@ a {
 		display: block;
 		width: 100%;
 	}
-
 }
 
 @media screen and (min-width: 1200px) {
 	header {
 		font-size: 1.5em;
 	}
+
+	h3 {
+		margin-top: 18px;
+	}
+
 	.main-image img {
 		margin-top: -90px;
 	}
-
 }
 
 @media screen and (min-width: 1560px) {
 	header {
 		font-size: 1.6em;
 	}
+
+	h3 {
+		margin-top: 20px;
+	}
+
 	.main-image img {
 		margin-top: -120px;
 	}
@@ -202,8 +271,8 @@ a {
 	.work-header {
 		font-size: 1.7em;
 	}
-
 }
+
 
 
 
