@@ -3,20 +3,23 @@
 
 /* zocial */
 [class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
+  font-family: "zocial", sans-serif;
 }
 
 header {
 	text-align: right;
-    margin: 0 auto;
+/*    margin: 0 auto;*/
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 5px;
     line-height: 1.5em;
+    border-bottom: 3px solid #dce6e9;
+    margin-bottom: 10px;
 }
 
 /*Set maximum with of body with margins, use Google Font*/
 body {
-	font-family: 'Playfair Display', serif;
+	font-family: "Playfair Display", serif;
 	max-width: 1560px;
 	margin: auto;
 }
@@ -31,7 +34,7 @@ h3 {
 }
 
 hr {
-	color: #334E58;
+	color: #334e58;
 	opacity: 0.8;
 }
 
@@ -51,7 +54,7 @@ a {
 }
 
 .social-button {
-	font-family: 'Playfair Display', serif;
+	font-family: "Playfair Display", serif;
 	font-size: 0.9em;
 	color: #334E58;
     opacity: 0.8;
@@ -76,11 +79,11 @@ a {
 }
 
 .social-content a:hover {
-	background-color: #DCE6E9;
+	background-color: #dce6e9;
 }
 
 .social-content a:active {
-	background-color: #334E58;
+	background-color: #334e58;
 }
 
 .social:hover .social-content {
@@ -89,7 +92,7 @@ a {
 }
 
 .sub-header {
-	color: #334E58;
+	color: #334e58;
 	opacity: 0.8;
 }
 
@@ -99,9 +102,9 @@ a {
 }
 
 /*set transition for main image due to changes in media query*/
-.main-image img {
+.main-image-img {
 	transition:margin-top 0.5s ease-in-out;
-	}
+}
 
 /*set 'Featured Work' header, set animation*/
 .work-header {
@@ -109,7 +112,7 @@ a {
 	padding-left: 20px;
     padding-right: 20px;
     animation: fadeInFromLeft 0.5s ease-out;
-    background-color: #334E58;
+    background-color: #334e58;
     opacity: 0.8;
     overflow: hidden;
     line-height: 2em;
